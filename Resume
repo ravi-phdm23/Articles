@@ -1,0 +1,183 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[margin=0.75in]{geometry} % Set custom margins
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item{\small #1}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+% Contact Information
+\begin{flushleft}
+    \textbf{\LARGE Ravi Kumar Jain} \\ % Reduced the font size to LARGE
+    ravi1jain@hsbc.co.in \\
+    +91 9971399550
+\end{flushleft}
+
+% Summary
+\section{Summary}
+Accomplished finance professional with extensive expertise in Finance System Operations, Data Operations, Change Management, and Business Finance. Currently applying process reengineering skills to redesign and enhance Financial Accounting processes, driving improvements in efficiency and control. 
+
+\vspace{-0.2cm} % Adjust this negative value to reduce space after this section
+% Education
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeItem{
+        \textbf{Pursuing part-time PhD in Banking (Risk \& performance analysis using AIML)} \\
+        Indian Institute of Foreign Trade, Delhi, India \hfill 2023 - Ongoing
+    }
+    \resumeItem{
+        \textbf{Post Graduation Program in AIML} \\
+        The University of Texas at Austin, Great Lakes - India \hfill 2020 - 2021
+    }
+    \resumeItem{
+        \textbf{MBA (PGDM - Finance)} \\
+        Institute of Management Technology, Ghaziabad, India \hfill 2009 - 2011
+    }
+    \resumeItem{
+        \textbf{Bachelor of Technology (Electronics \& Communication)} \\
+        Bharati Vidyapeeth, Delhi, India \hfill 2001 - 2005
+    }
+\resumeSubHeadingListEnd
+
+\vspace{-0.2cm} % Adjust this negative value to reduce space after this section
+
+% Areas of Expertise
+\section{Areas of Expertise}
+\begin{tabularx}{\textwidth}{X X}
+    Finance System Transformation & Control Designs \& Implementation \\
+    Stakeholder Collaboration \& Management & Process Reengineering \\
+    Data Governance \& Integrity & FTP Systems \& SDIs \\
+\end{tabularx}
+
+\vspace{0.1cm} % Adjust this value as needed
+
+\noindent \hspace{0.2cm}\textbf{Technical Expertise:}\hspace{0.2cm} SQL, Python, Cloud basics, PeopleSoft, Tableau, Qlik Sense, AIML
+
+
+\vspace{-0.2cm} % Adjust this negative value to reduce space after this section
+
+% Experience
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeItem{
+        \textcolor{darkblue}{\textbf{VP, HSBC - Testing and Process Reengineering Lead}} \hfill \textcolor{darkblue}{Dec 2020 - Present} \\
+        % \textbf{VP, HSBC} \hfill Dec 2020 - Present \\
+    \textbf{Financial Accounting} 
+    \resumeItemListStart
+        \resumeItem{Leading a team responsible for testing FCDP changes and validations, supporting Basel 3.1 implementation, and redesigning process workflows for Financial Accounting into scalable, automated solutions.}
+        \resumeItem{Designed automated testing processes for FCDP validations and Basel 3.1 RWA regulations, ensuring compliance, data integrity, and accurate reporting for UK operations.}
+        \resumeItem{Transforming EUC (End User Computing, excel based) workflows into streamlined, controlled, and scalable solutions through advanced methodologies.}
+        \resumeItem{Working on multiple proofs of concept (POCs) to standardize processes across different sites, enhancing controls, automating MIs, and enabling automated data download/upload functionality, with the ability to run processes centrally. Examples include HUB-Remind reconciliation, SARACEN bulk upload feature, and Phase 5 process reengineering.}
+        \resumeItem{Nearing deployment of Derivative process redesign - a scalable Python-driven solution for automated centralised processing, ensuring controls and efficient submission across all sites and phases.}
+    \resumeItemListEnd
+    
+        \textbf{Data Operations} 
+        \resumeItemListStart
+
+            \resumeItem{Utilized FCDP dataset and SDIs, leveraging Big Query, Tableau, and Python to create automated solutions for data assurance, reconciliation, analysis, and MI dashboards.}
+            \resumeItem{Championed several modernization efforts, including  redesigning Adjustments and Validation dashboards, developing the FCDP Data Dictionary \& Lineage, UAT process improvements.}
+            \resumeItem{Led a Python-based IRRBB automation initiative which reduced over 85 manual adjustments within two months.}
+            \resumeItem{Launched key DataOps initiatives such as a centralized GitHub repository and a DSquad collaboration with 20+ team members.}
+            \resumeItem{Led the HBEU Data Management team and designed the Data Assurance Pack using Power BI and SQL, improving data insights and assurance processes.}
+        \resumeItemListEnd
+    }
+    \resumeItem{
+            \textcolor{darkblue}{\textbf{AVP, HSBC}} \hfill \textcolor{darkblue}{June 2018 - Dec 2020} \\
+        \textbf{Business Finance - GCB5 Career Acceleration Program} (July 2019 - Dec 2020)
+            \resumeItemListStart
+                \resumeItem{As part of GCB 5 Career Acceleration Program, supported the digital agenda for Management Business Reporting in CMB and GBM. Developed and automated Qlik Sense dashboards using Python and Xceptor, improving reporting and data visualization.}
+            \resumeItemListEnd
+
+        \textbf{FTP UK - Rules \& Ref data Management lead} (June 2018 - July 2019)
+        \resumeItemListStart
+            \resumeItem{Led RTM rules management and Reference Data team for HBUK, ensuring timely delivery and data quality improvements across the organization.}
+            \resumeItem{Acted as BAU Change Manager, coordinating with Project, IT, and FinOps teams to ensure smooth change delivery, user validation, and production support.}
+        \resumeItemListEnd
+    }    
+
+\resumeItem{
+    \textcolor{darkblue}{\textbf{Manager, HSBC}} \hfill \textcolor{darkblue}{Apr 2014 - June 2018} \\
+    \textbf{FTP BAU lead - HSBC Canada} (Feb 2016 - June 2018)
+    \resumeItemListStart
+        \resumeItem{Supported end-to-end Finance Operations for the Canada region, including reject handling, query resolution, and month-end and year-end process support. Maintained inbound/outbound rules and ensured timely resolution of financial queries.}
+        \resumeItem{Provided functional SME inputs for FTP System issues, assisting line finance users. Coordinated with various Finance teams for accounting reject clearance and rules maintenance, ensuring operational efficiency.}
+        \resumeItem{Supported internal and external audits, contributing to audit preparation and delivering key insights for process improvements. Managed the effective service delivery of regional finance systems, providing process support and knowledge sharing among team members.}
+    \resumeItemListEnd
+
+    \textbf{FTP System Transformation - HSBC UK} (Feb 2014 - Feb 2016)
+    \resumeItemListStart
+        \resumeItem{Worked as Change Manager, analyzing process impacts, documenting process changes, and ensuring finance team readiness via relevant training and user testing.}
+        \resumeItem{Successfully rolled out Tranche 5 (Low Volume) for the UK region, providing post-production support to resolve user queries.}
+        \resumeItem{Reviewed project documentation and conducted training sessions for UK FinOps teams, focusing on FTP GL upgrade processes, ensuring smooth adoption and transition.}
+    \resumeItemListEnd
+
+}
+
+
+\resumeItem{
+    \textcolor{darkblue}{\textbf{Assistant Manager, HSBC}} \hfill \textcolor{darkblue}{Apr 2012 - Feb 2014} \\
+    \textbf{PS GL Global Model Support - HSBC France and Mexico}
+    \resumeItemListStart
+        \resumeItem{Worked as Business Analyst for France and Mexico PS GL, involved in the analysis, design, and testing of PS GL finance processes.}
+        \resumeItem{Led a three-member team to provide Level 2 SME support for PeopleSoft General Ledger upgrades, delivering key global solutions such as the Pub Sub solution and Maintenance Upgrades pack.}
+        \resumeItem{Part of the design team for the Evergreen Roadmap and Upgrade strategy, aligning FTP and PS GL processes and analyzing financial processes and accounting rules for improvements.}
+    \resumeItemListEnd
+}
+
+
+
+
+    \resumeItem{
+        \textcolor{darkblue}{\textbf{Senior Consultant, HCL Infosystems}} \hfill \textcolor{darkblue}{ Jan 2012 - Apr 2012} \
+        \resumeItemListStart
+            \resumeItem{Led the implementation of the PeopleSoft Budget Module for the Indian Defence sector, managing requirement gathering, system design, configurations, UAT, and user training.}
+        \resumeItemListEnd
+    }
+    \resumeItem{
+        \textcolor{darkblue}{\textbf{Senior Associate Consultant, Infosys}} \hfill \textcolor{darkblue}{Apr 2011 - Jan 2012} \
+        \resumeItemListStart
+            \resumeItem{Worked on implementing PeopleSoft Finance Modules for the Supply Chain Sector, handling requirement gathering, IT coordination, and system testing.}
+        \resumeItemListEnd
+    }
+    \resumeItem{
+        \textcolor{darkblue}{\textbf{Assistant System Engineer, Tata Consultancy Services}} \hfill \textcolor{darkblue}{Oct 2005 - Jul 2009} \
+        \resumeItemListStart
+            \resumeItem{Led the implementation of General Ledger and data transformation for a US Bank. Managed Oracle database and designed applications using Application Engine.}
+        \resumeItemListEnd
+    }
+\resumeSubHeadingListEnd
+
+
+% Accolades
+\section{Accolades}
+\begin{itemize}[leftmargin=0.15in, label={--}]
+    \item{Consistent Top Performer in the last two years (2022-23).}
+    \item{Selected for the GFC Talent Book (2023-24) and Career Acceleration Program (2019).}
+    \item{Recognized by FinOps Exco for the FOTC Data Dictionary solution and Data Lineage.}
+\end{itemize}
+
+\end{document}
