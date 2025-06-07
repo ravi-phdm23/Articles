@@ -1,0 +1,1671 @@
+Scenarios Input,Testcases
+User Registration and Authentication:,
+,
+Verify that users can register with valid information.,Verify that users can register with valid information:
+,
+,"Test Case 1: Enter all required fields (e.g., username, email, password) with valid information."
+,Test Case 2: Verify that the user receives a confirmation email after successful registration.
+,Test Case 3: Check if the registered user is able to log in after registration.
+"Verify that users cannot register with invalid information (e.g., invalid email format, duplicate username).",Verify that users cannot register with invalid information:
+,
+,"Test Case 4: Enter an invalid email format (e.g., missing ""@"" symbol, incorrect domain)."
+,Test Case 5: Attempt to register with a username that is already in use.
+,Test Case 6: Leave required fields blank and attempt to register.
+Verify that users can log in with correct credentials.,Verify that users can log in with correct credentials:
+,
+,Test Case 7: Enter valid username and password.
+,Test Case 8: Check if the user is redirected to the home page/dashboard upon successful login.
+,"Test Case 9: Verify that users remain logged in if the ""Remember Me"" option is selected."
+Verify that users cannot log in with incorrect credentials.,Verify that users cannot log in with incorrect credentials:
+,
+,Test Case 10: Enter incorrect username and correct password.
+,Test Case 11: Enter correct username and incorrect password.
+,Test Case 12: Check if the appropriate error message is displayed for invalid login attempts.
+Verify that users can reset their password if forgotten.,Verify that users can reset their password if forgotten:
+,
+,"Test Case 13: Click on the ""Forgot Password?"" link and enter the registered email address."
+,Test Case 14: Verify that a password reset link is sent to the user's email.
+,Test Case 15: Click on the password reset link and enter a new password.
+,Test Case 16: Verify that the user can log in with the new password after resetting.
+,
+Browsing and Searching:,
+,
+Verify that users can browse through different restaurants.,Verify that users can browse through different restaurants:
+,
+,Test Case 1: Open the app and navigate to the restaurant browsing section.
+,Test Case 2: Scroll through the list of restaurants to ensure they are displayed properly.
+,Test Case 3: Click on random restaurants to verify that detailed information is displayed correctly.
+"Verify that users can search for restaurants by name, cuisine, location, etc.","Verify that users can search for restaurants by name, cuisine, location, etc.:"
+,
+,Test Case 4: Enter the name of a specific restaurant in the search bar and verify that it appears in the search results.
+,"Test Case 5: Search for restaurants based on cuisine type (e.g., Italian, Mexican) and ensure relevant results are displayed."
+,"Test Case 6: Test searching by location (e.g., city, zip code) to find restaurants nearby."
+"Verify that users can filter search results based on various criteria (e.g., price, ratings, delivery time).",Verify that users can filter search results based on various criteria:
+,
+,"Test Case 7: Apply a filter based on price range (e.g., $, $$, $$$) and verify that restaurants within the selected range are displayed."
+,"Test Case 8: Filter restaurants by ratings (e.g., 4 stars and above) and confirm that only highly rated restaurants appear."
+,"Test Case 9: Apply a filter for delivery time (e.g., within 30 minutes, within 1 hour) and ensure restaurants with corresponding delivery times are shown."
+"Verify that users can view details of a restaurant including menu, reviews, ratings, and photos.","Verify that users can view details of a restaurant including menu, reviews, ratings, and photos:"
+,
+,Test Case 10: Click on a restaurant from the search results and verify that its details page opens.
+,Test Case 11: Check that the menu items are listed with prices and descriptions.
+,Test Case 12: Verify that user reviews and ratings are displayed along with the option to read more.
+,Test Case 13: Ensure that restaurant photos are visible and can be enlarged for better viewing.
+,
+Placing Orders:,
+,
+Verify that users can add items to their cart from the menu.,Verify that users can add items to their cart from the menu:
+,
+,Scenario 1: User navigates to the menu of a restaurant.
+,Sub-scenario 1: User selects an item from the menu.
+,Sub-scenario 2: User adds multiple items to the cart.
+,Sub-scenario 3: User adds items from different categories to the cart.
+"Verify that users can specify customization options (e.g., toppings, spiciness level).","Verify that users can specify customization options (e.g., toppings, spiciness level):"
+,
+,Scenario 2: User selects an item from the menu that offers customization options.
+,Sub-scenario 1: User selects toppings for a pizza.
+,Sub-scenario 2: User specifies the spiciness level for a dish.
+,Sub-scenario 3: User selects additional sides or condiments for an item.
+"Verify that users can view their cart, modify quantities, and remove items.","Verify that users can view their cart, modify quantities, and remove items:"
+,
+,Scenario 3: User clicks on the cart icon to view their current order.
+,Sub-scenario 1: User modifies the quantity of items in the cart.
+,Sub-scenario 2: User removes an item from the cart.
+,Sub-scenario 3: User clears the entire cart.
+Verify that users can proceed to checkout and choose delivery or pickup options.,Verify that users can proceed to checkout and choose delivery or pickup options:
+,
+,Scenario 4: User reviews their order and proceeds to checkout.
+,Sub-scenario 1: User selects delivery option and provides delivery address.
+,Sub-scenario 2: User selects pickup option and chooses a pickup location.
+,Sub-scenario 3: User can see estimated delivery/pickup time before finalizing the order.
+Verify that users can add delivery addresses and payment methods.,Verify that users can add delivery addresses and payment methods:
+,
+,Scenario 5: User adds a new delivery address during checkout.
+,Sub-scenario 1: User fills in required details for a new delivery address.
+,Sub-scenario 2: User saves the delivery address for future orders.
+,Scenario 6: User adds a payment method during checkout.
+,Sub-scenario 1: User enters credit/debit card details.
+,Sub-scenario 2: User adds a new payment method like PayPal or Google Pay.
+Verify that users can apply promo codes or discounts.,Verify that users can apply promo codes or discounts:
+,
+,Scenario 7: User applies a promo code during checkout.
+,Sub-scenario 1: User enters a valid promo code and applies it to the order.
+,Sub-scenario 2: User enters an expired or invalid promo code and verifies the error message.
+,"Scenario 8: User applies a discount automatically applied to the order (e.g., new user discount, holiday discount)."
+,Sub-scenario 1: User's eligible discount is automatically applied to the order total.
+,
+Order Management:,
+,
+Verify that users can view their order history.,Verify that users can view their order history:
+,
+,"Test Case 1: User navigates to the ""Order History"" section of the app."
+,"Expected Result: The user's previous orders are displayed chronologically with relevant details (e.g., order number, date, items, total cost)."
+Verify that users receive confirmation emails/SMS upon placing an order.,Verify that users receive confirmation emails/SMS upon placing an order:
+,
+,Test Case 2: User places an order successfully.
+,"Expected Result: User receives a confirmation email or SMS containing details of the order (e.g., order number, items, delivery address, estimated delivery time)."
+"Verify that users receive real-time updates on the status of their order (e.g., order confirmed, food being prepared, out for delivery).",Verify that users receive real-time updates on the status of their order:
+,
+,Test Case 3: User places an order and monitors order status in real-time.
+,"Expected Result: User receives notifications or can check within the app for updates such as ""Order Confirmed,"" ""Food Being Prepared,"" ""Out for Delivery,"" and ""Order Delivered."""
+Verify that users can cancel an order before it is confirmed by the restaurant.,Verify that users can cancel an order before it is confirmed by the restaurant:
+,
+,Test Case 4: User attempts to cancel an order immediately after placing it.
+,"Expected Result: The user can cancel the order successfully, and the payment authorization is voided."
+,Test Case 5: User attempts to cancel an order after it has been confirmed by the restaurant.
+,Expected Result: The user receives a message indicating that the order cannot be canceled because it is already being prepared.
+Verify that users can contact customer support for any issues with their order.,Verify that users can contact customer support for any issues with their order:
+,
+,"Test Case 6: User encounters an issue with an order (e.g., missing items, delayed delivery)."
+,Expected Result: User can easily find and access the customer support/contact information within the app.
+,Test Case 7: User contacts customer support regarding the issue with the order.
+,"Expected Result: User receives a timely response and appropriate resolution (e.g., refund, replacement) from customer support."
+,
+Restaurant Management:,
+,
+Verify that restaurant owners can register and set up their profiles.,Verify that restaurant owners can register and set up their profiles:
+,
+,Test Case 1: Restaurant owner navigates to the registration page.
+,"Expected Result: The registration page allows the restaurant owner to enter required details such as name, email, password, and restaurant information."
+,Test Case 2: Restaurant owner completes registration and logs in.
+,"Expected Result: The restaurant owner's profile is created successfully, and they can access the restaurant management dashboard."
+"Verify that restaurant owners can add/edit their menu items, prices, and descriptions.","Verify that restaurant owners can add/edit their menu items, prices, and descriptions:"
+,
+,Test Case 3: Restaurant owner adds a new menu item with price and description.
+,Expected Result: The new menu item is successfully added to the restaurant's menu.
+,Test Case 4: Restaurant owner edits an existing menu item to update price or description.
+,Expected Result: Changes to the menu item are saved and reflected in the restaurant's menu.
+Verify that restaurant owners can set their availability and delivery radius.,Verify that restaurant owners can set their availability and delivery radius:
+,
+,Test Case 5: Restaurant owner sets opening and closing hours for the restaurant.
+,Expected Result: The restaurant's availability is updated according to the specified hours.
+,Test Case 6: Restaurant owner sets a delivery radius for the restaurant.
+,"Expected Result: The delivery radius is defined, and orders are only accepted from within this radius."
+Verify that restaurant owners receive notifications of new orders and can accept/reject them.,Verify that restaurant owners receive notifications of new orders and can accept/reject them:
+,
+,Test Case 7: Restaurant owner receives a notification for a new order.
+,"Expected Result: The restaurant owner is notified via email, SMS, or within the app dashboard."
+,Test Case 8: Restaurant owner accepts a new order.
+,"Expected Result: The order status is updated to ""Accepted,"" and the customer receives a confirmation."
+"Verify that restaurant owners can update order status (e.g., food prepared, out for delivery).","Verify that restaurant owners can update order status (e.g., food prepared, out for delivery):"
+,
+,"Test Case 9: Restaurant owner updates order status to ""Food Prepared."""
+,"Expected Result: The order status is updated, and the customer receives a notification indicating that their food is ready."
+,"Test Case 10: Restaurant owner updates order status to ""Out for Delivery."""
+,"Expected Result: The delivery driver is notified, and the customer receives a notification with delivery details."
+,
+Payment Processing:,
+,
+Verify that payments are processed securely.,Verify that payments are processed securely:
+,
+,"Test Case 1: Enter valid payment information (e.g., credit card details) and place an order."
+Verify that users can add multiple payment methods and choose between them.,Expected Result: Payment is processed securely without any unauthorized access or data breaches.
+,"Test Case 2: Attempt to manipulate payment parameters (e.g., tamper with payment data in transit)."
+,"Expected Result: The system detects tampering attempts and rejects the payment, ensuring security measures are effective."
+Verify that users receive receipts for their orders.,Verify that users receive receipts for their orders:
+,
+,Test Case 3: Place an order successfully and verify receipt generation.
+,"Expected Result: A receipt containing order details (e.g., order number, items, total cost) is generated and sent to the user via email or within the app."
+,Test Case 4: Check that receipt information matches the order details accurately.
+,Expected Result: The receipt reflects the correct order information without discrepancies.
+Verify that refunds are processed correctly in case of cancellations or issues with the order.,Verify that refunds are processed correctly in case of cancellations or issues with the order:
+,
+,Test Case 5: Cancel an order before it is confirmed by the restaurant.
+,"Expected Result: The payment authorization is voided, and the user receives a refund confirmation."
+,Test Case 6: Initiate a refund for a partially delivered or defective order.
+,"Expected Result: The refund is processed promptly, and the user receives confirmation of the refunded amount."
+Verify that users can add multiple payment methods and choose between them.,Verify that users can add multiple payment methods and choose between them:
+,
+,"Test Case 7: Add a new payment method (e.g., PayPal, Google Pay) to the user's account."
+,Expected Result: The new payment method is successfully added and available for future orders.
+,Test Case 8: Place an order and select a payment method from multiple options.
+,Expected Result: The user can choose between saved payment methods or add a new one during checkout.
+,
+User Experience:,
+,
+Verify that the app is responsive and works smoothly on different devices and screen sizes.,Verify that the app is responsive and works smoothly on different devices and screen sizes:
+,
+,"Test Case 1: Access the app on various devices (e.g., smartphones, tablets, laptops) with different screen sizes."
+,Expected Result: The app layout adjusts dynamically to fit different screen sizes without any content overflow or distortion.
+,"Test Case 2: Test app performance and responsiveness on devices with varying processing capabilities (e.g., low-end smartphones, high-end tablets)."
+,"Expected Result: The app functions smoothly without lagging or freezing, providing a consistent user experience across devices."
+Verify that the app is accessible to users with disabilities.,Verify that the app is accessible to users with disabilities:
+,
+,Test Case 3: Use screen reader software to navigate through the app.
+,"Expected Result: All app features and content are accessible via screen readers, with appropriate labeling and descriptions for elements."
+,"Test Case 4: Test app functionality using keyboard navigation only, without relying on mouse interactions."
+,"Expected Result: Users can navigate through the app and interact with elements using keyboard shortcuts, ensuring accessibility for users with motor disabilities."
+Verify that the app loads quickly and does not crash under heavy usage.,Verify that the app loads quickly and does not crash under heavy usage:
+,
+,Test Case 5: Simulate heavy usage by sending simultaneous requests from multiple users.
+,"Expected Result: The app can handle concurrent user requests without slowing down or crashing, maintaining acceptable response times."
+,"Test Case 6: Monitor app performance metrics (e.g., response time, CPU/memory usage) under heavy load conditions."
+,"Expected Result: The app's performance metrics remain within acceptable thresholds, and no critical errors or crashes occur."
+Verify that the app provides helpful error messages and guidance in case of errors or failures.,Verify that the app provides helpful error messages and guidance in case of errors or failures:
+,
+,"Test Case 7: Intentionally trigger errors (e.g., network timeout, invalid input) during app usage."
+,Expected Result: Users receive clear and informative error messages explaining the issue and providing guidance on how to resolve it.
+,Test Case 8: Test app behavior when encountering unexpected errors or server downtime.
+,"Expected Result: The app gracefully handles errors, displays user-friendly error messages, and provides options for recovery or assistance (e.g., contacting support)."
+Verify that the app follows design guidelines and provides a consistent user experience throughout.,Verify that the app follows design guidelines and provides a consistent user experience throughout:
+,
+,"Test Case 9: Review app design elements (e.g., color scheme, typography, layout) against design guidelines."
+,"Expected Result: The app adheres to design guidelines consistently across all screens, maintaining visual harmony and coherence."
+,Test Case 10: Ensure consistency in user interactions and navigation patterns throughout the app.
+,"Expected Result: Users can easily understand and predict how to perform actions and navigate between screens, promoting a seamless user experience."
+,
+Localization and Internationalization:,
+,
+Verify that the app supports multiple languages and currencies.,Verify that the app supports multiple languages and currencies:
+,
+,Test Case 11: Change the app language setting to a supported language other than the default.
+,"Expected Result: All app text and labels are translated accurately into the selected language, providing a localized experience for users."
+,Test Case 12: Verify that the app displays prices and currency symbols according to the user's selected currency preference.
+,"Expected Result: Prices are converted and displayed correctly in the user's preferred currency, reflecting accurate currency exchange rates."
+,
+"Verify that the app displays localized content (e.g., restaurant names, menu items) correctly.",Verify that the app displays localized content correctly:
+,
+,"Test Case 13: Test app functionality (e.g., date/time formats, address formats) with different regional settings."
+,"Expected Result: The app adapts to regional preferences and displays localized content (e.g., date formats, address formats) accurately according to the user's location."
+,
+Security and Privacy:,
+,
+Verify that user data is stored securely and encrypted.,Verify that user data is stored securely and encrypted:
+,
+,Test Case 1: Review the database encryption mechanism used by the app.
+,"Expected Result: User data stored in the database is encrypted using industry-standard encryption algorithms (e.g., AES-256) to protect it from unauthorized access."
+,Test Case 2: Attempt to access user data directly from the database without proper authorization.
+,"Expected Result: Access to user data is denied, and attempts to retrieve sensitive information result in encrypted or masked data being returned."
+"Verify that sensitive information (e.g., passwords, payment details) is handled securely.","Verify that sensitive information (e.g., passwords, payment details) is handled securely:"
+,
+,Test Case 3: Check the password storage mechanism used by the app.
+,Expected Result: User passwords are hashed and salted before being stored in the database to prevent unauthorized access in case of a data breach.
+,Test Case 4: Test the handling of payment details during transactions.
+,"Expected Result: Payment details are transmitted over secure channels (e.g., HTTPS) and encrypted to protect them from interception by malicious actors."
+Verify that the app has appropriate measures in place to prevent unauthorized access or data breaches.,Verify that the app has appropriate measures in place to prevent unauthorized access or data breaches:
+,
+,Test Case 5: Test for common security vulnerabilities such as SQL injection and cross-site scripting (XSS) attacks.
+,"Expected Result: The app is resilient to common security threats, with input validation and sanitization measures in place to prevent exploitation of vulnerabilities."
+,Test Case 6: Conduct penetration testing to identify potential security weaknesses.
+,"Expected Result: Penetration testing reveals no critical security vulnerabilities, and any identified issues are promptly addressed by the development team."
+"Verify that users have control over their privacy settings and can manage their data as per privacy regulations (e.g., GDPR).","Verify that users have control over their privacy settings and can manage their data as per privacy regulations (e.g., GDPR):"
+,
+,Test Case 7: Review the app's privacy policy and data handling practices.
+,"Expected Result: The app's privacy policy clearly outlines how user data is collected, stored, and used, and users are provided with options to manage their privacy settings."
+,Test Case 8: Test the functionality to opt out of data collection or sharing.
+,"Expected Result: Users can opt out of certain data collection practices (e.g., targeted advertising) and control the sharing of their personal information with third parties."
+,Test Case 9: Verify the process for users to request access to their personal data or request its deletion.
+,"Expected Result: The app provides mechanisms for users to access, modify, or delete their personal data upon request, in compliance with privacy regulations such as GDPR."
+,
+Feedback and Reviews:,
+,
+Verify that users can leave reviews and ratings for restaurants and their orders.,Verify that users can leave reviews and ratings for restaurants and their orders:
+,
+,Test Case 1: User places an order and is prompted to leave a review/rating after order completion.
+,Expected Result: The user can submit a review and rating for the restaurant and/or specific items in the order.
+,Test Case 2: User navigates to the restaurant's page and finds an option to leave a review/rating.
+,Expected Result: The user can submit a review and rating for the restaurant based on their overall experience.
+Verify that users can edit or delete their own reviews.,Verify that users can edit or delete their own reviews:
+,
+,Test Case 3: User attempts to edit a review they previously submitted.
+,"Expected Result: The user can modify the content of their review (e.g., change text, update rating) and save the changes."
+,Test Case 4: User attempts to delete a review they previously submitted.
+,"Expected Result: The user can delete their review, removing it from the app and associated restaurant's page."
+Verify that restaurants can respond to user reviews.,Verify that restaurants can respond to user reviews:
+,
+,
+,Test Case 5: Restaurant owner accesses the restaurant's dashboard and views received reviews.
+,Expected Result: The restaurant owner can see all user reviews and has the option to respond to each review.
+,Test Case 6: Restaurant owner submits a response to a user review.
+,"Expected Result: The response from the restaurant owner is displayed alongside the corresponding user review, providing a public reply."
+Verify that the app aggregates and displays reviews and ratings accurately.,Verify that the app aggregates and displays reviews and ratings accurately:
+,
+,Test Case 7: Access the restaurant's page and review section to verify the display of aggregated reviews and ratings.
+,"Expected Result: The app displays an average rating for the restaurant based on all user ratings, along with individual reviews."
+,Test Case 8: Check that the review count matches the actual number of submitted reviews.
+,Expected Result: The app accurately reflects the total number of reviews submitted by users for the restaurant.
+,
+Feature : Optimal Route Determined by Shortest Distance,Basic Test Case:
+,
+,Starting Point: City Center
+,"Destinations: A, B, C, D"
+,Expected Route: City Center -> A -> B -> C -> D -> City Center
+,Multiple Starting Points:
+,
+,"Starting Points: X, Y, Z"
+,"Destinations: A, B, C"
+,"Expected Route (e.g., if X is chosen as the starting point): X -> A -> B -> C -> X"
+,Locations in Proximity:
+,
+,Starting Point: Home
+,"Destinations: Nearest grocery store, pharmacy, post office, bank"
+,Expected Route: Home -> Nearest grocery store -> pharmacy -> bank -> post office -> Home
+,Distant Locations:
+,
+,Starting Point: City A
+,"Destinations: City X, City Y, City Z, City W"
+,Expected Route: City A -> City X -> City Y -> City Z -> City W -> City A
+,Randomized Locations:
+,
+,Starting Point: Random point on a map
+,Destinations: Random set of locations
+,Expected Route (determined by algorithm): Optimized shortest distance route
+,Large Number of Destinations:
+,
+,Starting Point: Warehouse
+,Destinations: 20 different stores across the city
+,Expected Route: Warehouse -> [optimized sequence of stores] -> Warehouse
+,Traffic Consideration:
+,
+,Starting Point: Office
+,Destinations: Client meetings in various parts of the city during peak traffic hours
+,Expected Route: Route optimized considering traffic conditions
+,Looping Route:
+,
+,Starting Point: Park
+,"Destinations: Scenic spots A, B, C, D"
+,Expected Route: Park -> A -> B -> C -> D -> Park (looping back to the starting point)
+,Special Constraints:
+,
+,Starting Point: Hospital
+,Destinations: Patients' homes with accessibility needs
+,"Expected Route: Optimized route considering wheelchair accessibility, elevator availability, etc."
+,Delivery Truck Route:
+,
+,Starting Point: Distribution Center
+,Destinations: Delivery locations in rural and urban areas
+,"Expected Route: Optimized route considering road conditions, vehicle size, and delivery time windows."
+,
+,
+,
+Traffic Consideration Route,Traffic Consideration Route
+,
+,Starting Point: City Center
+,
+,Destinations: Office during rush hour
+,Expected Route: Optimal route considering traffic congestion during rush hour.
+,Starting Point: Residential Area
+,
+,Destinations: Shopping Mall during weekend traffic
+,Expected Route: Route optimized to avoid heavy weekend traffic.
+,Starting Point: Airport
+,
+,Destinations: Hotel in the city center during peak arrival hours
+,Expected Route: Route planned to bypass traffic congestion around the airport during peak arrival hours.
+,Starting Point: Industrial Zone
+,
+,Destinations: Seaport during trucking peak hours
+,Expected Route: Route optimized to navigate through industrial traffic during peak trucking hours.
+,Starting Point: University Campus
+,
+,Destinations: Stadium during a major event
+,Expected Route: Route planned considering event traffic management around the stadium.
+,Starting Point: Residential Neighborhood
+,
+,Destinations: Hospital during ambulance rush hours
+,Expected Route: Route optimized to avoid congestion around hospitals during ambulance rush hours.
+,Starting Point: Business District
+,
+,Destinations: Residential Area during school pick-up time
+,Expected Route: Route planned to avoid school zones and pick-up traffic.
+,Starting Point: Shopping Center
+,
+,Destinations: Restaurant during evening rush hours
+,Expected Route: Route optimized to avoid congested areas during the evening rush.
+,Starting Point: Tourist Attraction
+,
+,Destinations: Museum during peak tourist season
+,Expected Route: Route planned to avoid tourist congestion and heavy traffic.
+,Starting Point: Train Station
+,
+,Destinations: Bus Terminal during commuter peak hours
+,Expected Route: Route optimized considering commuter traffic around transit hubs.
+,
+Priority Delivery based on Urgency,3: Priority Delivery based on Urgency
+,
+,Urgent Delivery Request: Medical supplies to a hospital
+,
+,Expected Handling: Prioritize and expedite the delivery to meet urgent medical needs.
+,Urgent Delivery Request: Emergency repair parts to a manufacturing plant
+,
+,Expected Handling: Immediate attention and fast-track delivery to minimize production downtime.
+,Urgent Delivery Request: Legal documents to a law firm before a court deadline
+,
+,Expected Handling: Expedited delivery to ensure documents reach the firm on time for court proceedings.
+,Urgent Delivery Request: Perishable food items to a restaurant
+,
+,Expected Handling: Fast-tracked delivery to maintain the freshness of the perishable items.
+,Urgent Delivery Request: Replacement equipment to a construction site
+,
+,Expected Handling: Prioritized delivery to avoid delays in construction activities.
+,Urgent Delivery Request: Emergency response supplies to a disaster-stricken area
+,
+,Expected Handling: Immediate dispatch and expedited delivery to provide essential aid.
+,Urgent Delivery Request: Vital medical equipment to a remote clinic
+,
+,Expected Handling: Priority handling and fastest available route to ensure timely medical support.
+,Urgent Delivery Request: Critical IT components to restore a server outage
+,
+,Expected Handling: Expedited delivery to restore system functionality and minimize business disruption.
+,Urgent Delivery Request: Blood donations to a hospital for emergency surgeries
+,
+,Expected Handling: Immediate dispatch and priority delivery to save lives.
+,Urgent Delivery Request: Firefighting equipment to a fire station
+,
+,Expected Handling: Fast-tracked delivery to ensure readiness for emergency response.
+,
+Time-Sensitive Delivery,4: Time-Sensitive Delivery
+,
+,Same-Day Delivery Request: Online retail orders
+,
+,Expected Handling: Delivery within the same day of order placement.
+,Next-Day Delivery Request: Grocery delivery service
+,
+,Expected Handling: Delivery scheduled for the following day after order placement.
+,Two-Hour Delivery Request: Food delivery from a restaurant
+,
+,Expected Handling: Delivery within two hours of order placement to ensure freshness.
+,Express Delivery Request: Document courier service
+,
+,Expected Handling: Expedited delivery within a few hours of pickup.
+,Overnight Delivery Request: Courier service for legal documents
+,
+,Expected Handling: Delivery scheduled for the next morning after pickup.
+,Weekend Delivery Request: Parcel delivery for a special event
+,
+,Expected Handling: Delivery scheduled for the upcoming weekend.
+,Holiday Delivery Request: Gift delivery for a festive occasion
+,
+,Expected Handling: Delivery scheduled for the specific holiday.
+,Rush Hour Delivery Request: Office supplies delivery during rush hour
+,
+,Expected Handling: Delivery planned during off-peak traffic hours to ensure timely arrival.
+,Early Morning Delivery Request: Bakery delivery to cafes and restaurants
+,
+,Expected Handling: Delivery scheduled for early morning to coincide with business opening hours.
+,After-Hours Delivery Request: Emergency repair parts delivery to a facility
+,
+,Expected Handling: Delivery scheduled after regular business hours to minimize downtime.
+,
+Dynamic Route Optimization,5: Dynamic Route Optimization
+,
+,Real-Time Traffic Update: Construction on a major road
+,
+,Expected Handling: Route dynamically updated to avoid the construction zone.
+,Accident Report: Traffic congestion due to an accident
+,
+,Expected Handling: Route dynamically recalculated to bypass the accident site.
+,Weather Alert: Heavy rain causing flooding on certain roads
+,
+,Expected Handling: Route dynamically adjusted to avoid flooded areas.
+,Road Closure Notification: Parade causing road closures
+,
+,Expected Handling: Route dynamically rerouted around the closed roads.
+,Special Event Notification: Street festival impacting traffic flow
+,
+,Expected Handling: Route dynamically optimized considering the event's impact on traffic.
+,Traffic Jam Prediction: Predicted traffic jam due to rush hour
+,
+,Expected Handling: Route dynamically adjusted to take alternative routes before congestion builds up.
+,Emergency Response Alert: Emergency vehicles requiring right of way
+,
+,Expected Handling: Route dynamically adapted to allow emergency vehicles to pass through.
+,Construction Completion Update: Road reopening after construction
+,
+,Expected Handling: Route dynamically optimized to utilize the reopened road.
+,Weather Improvement Alert: Clearing of heavy fog
+,
+,Expected Handling: Route dynamically optimized to revert to the usual path.
+,Traffic Signal Synchronization: Optimal traffic signal timing implemented
+,
+,Expected Handling: Route dynamically adjusted to take advantage of synchronized traffic signals for smoother flow.
+,
+Weather Conditions Consideration,6: Weather Conditions Consideration
+,
+,Rainy Weather: Delivery during heavy rainfall
+,
+,Expected Handling: Route adjusted to avoid flooded or slippery roads.
+,Snowy Weather: Delivery during snowfall
+,
+,Expected Handling: Route adapted to navigate safely on snowy or icy roads.
+,Foggy Weather: Delivery during low visibility
+,
+,"Expected Handling: Route planned with caution, considering reduced visibility conditions."
+,Stormy Weather: Delivery during thunderstorms
+,
+,Expected Handling: Route adjusted to avoid areas prone to flooding or lightning strikes.
+,Extreme Heat: Delivery during a heatwave
+,
+,Expected Handling: Route optimized to minimize exposure to extreme temperatures.
+,Freezing Conditions: Delivery during below-zero temperatures
+,
+,Expected Handling: Route planned to avoid icy patches and ensure safe travel.
+,Windy Weather: Delivery during strong winds
+,
+,Expected Handling: Route adjusted to minimize exposure to crosswinds and potential hazards.
+,Hailstorm: Delivery during hail
+,
+,Expected Handling: Route planned to seek sheltered areas and avoid damage from hail.
+,Tornado Warning: Delivery during tornado watch
+,
+,Expected Handling: Route adjusted to steer clear of tornado-prone areas and seek safe refuge.
+,Hurricane Alert: Delivery during hurricane preparation
+,
+,Expected Handling: Route planned well in advance to evacuate from hurricane-affected regions and ensure safety.
+,
+ Multi-Agent Collaboration,7: Multi-Agent Collaboration
+,
+,Collaboration with Traffic Control Center: Sharing real-time traffic updates
+,
+,Expected Handling: Traffic information integrated into route planning to optimize delivery routes.
+,Collaboration with Weather Service: Sharing weather forecasts
+,
+,Expected Handling: Weather forecasts used to plan routes and adapt to changing weather conditions.
+,Collaboration with Emergency Services: Sharing emergency response updates
+,
+,Expected Handling: Immediate rerouting in case of emergency response needs or road closures.
+,Collaboration with Other Delivery Services: Sharing route optimization data
+,
+,Expected Handling: Utilizing shared optimization data to improve overall delivery efficiency.
+,Collaboration with Mapping Services: Integrating mapping updates
+,
+,Expected Handling: Incorporating updated maps to ensure accurate navigation and routing.
+,Collaboration with Customer Service: Communicating delivery updates
+,
+,Expected Handling: Providing real-time delivery updates to customers based on collaboration with customer service teams.
+,Collaboration with Vehicle Maintenance: Sharing vehicle status updates
+,
+,Expected Handling: Vehicle maintenance data used to schedule deliveries and ensure fleet readiness.
+,Collaboration with Supply Chain Partners: Sharing inventory and demand data
+,
+,Expected Handling: Optimizing routes based on real-time inventory levels and demand forecasts.
+,Collaboration with Energy Providers: Sharing fuel efficiency data
+,
+,Expected Handling: Utilizing fuel efficiency data to optimize routes and reduce carbon footprint.
+,Collaboration with Government Agencies: Sharing road closure and maintenance information
+,
+,Expected Handling: Incorporating government updates on road closures and maintenance activities into route planning.
+,
+Customer Delivery Preference,8: Customer Delivery Preference
+,
+,Preferred Delivery Time: Customer requests delivery in the morning
+,
+,Expected Handling: Delivery scheduled for the requested morning time slot.
+,Preferred Delivery Location: Customer specifies delivery to the back door
+,
+,Expected Handling: Delivery made to the designated back door location.
+,Special Instructions: Customer requests leaving the package with a neighbor
+,
+,Expected Handling: Package delivered to the neighbor as per customer's instructions.
+,Delivery Confirmation Method: Customer requests signature upon delivery
+,
+,Expected Handling: Delivery agent obtains customer's signature as proof of delivery.
+,Packaging Preference: Fragile items requiring extra care during handling
+,
+,Expected Handling: Fragile items handled with extra care to prevent damage during delivery.
+,Privacy Preferences: Customer requests discreet packaging
+,
+,Expected Handling: Package delivered in discreet packaging as per customer's request.
+,Delivery Frequency: Customer requests weekly delivery
+,
+,Expected Handling: Regular weekly delivery scheduled as per customer's preference.
+,Payment Method Preference: Customer specifies cash on delivery
+,
+,Expected Handling: Payment collected in cash upon delivery as per customer's preference.
+,Delivery Notification: Customer requests SMS notification upon delivery
+,
+,Expected Handling: SMS notification sent to the customer upon successful delivery.
+,Product Customization: Customer requests personalized items
+,
+,Expected Handling: Personalized items delivered as per customer's specifications and preferences.
+,
+Specialized Delivery Vehicles,9: Specialized Delivery Vehicles
+,
+,Refrigerated Truck: Delivery of perishable goods
+,
+,Expected Handling: Perishable items transported in a refrigerated truck to maintain freshness.
+,Electric Vehicle: Environmentally friendly delivery option
+,
+,Expected Handling: Delivery made using an electric vehicle to reduce carbon emissions.
+,Oversized Vehicle: Delivery of large equipment or furniture
+,
+,Expected Handling: Oversized items transported using a specialized vehicle equipped to handle large loads.
+,Bicycle Courier: Delivery in urban areas with narrow streets
+,
+,Expected Handling: Delivery made using a bicycle courier for efficient navigation through congested city streets.
+,Motorcycle Courier: Delivery in densely populated areas
+,
+,Expected Handling: Delivery made using a motorcycle courier for swift movement through traffic.
+,Drone Delivery: Delivery to remote or inaccessible locations
+,
+,Expected Handling: Delivery carried out using drones to reach remote or difficult-to-access areas.
+,Boat Delivery: Delivery to island destinations or coastal areas
+,
+,Expected Handling: Delivery made using boats for locations accessible only by water.
+,Aircraft Delivery: Expedited delivery to distant locations
+,
+,Expected Handling: Delivery made using aircraft for urgent or long-distance deliveries.
+,Hybrid Vehicle: Delivery combining efficiency and environmental sustainability
+,
+,Expected Handling: Delivery made using a hybrid vehicle to optimize fuel efficiency and reduce emissions.
+,Autonomous Vehicle: Delivery using self-driving vehicles
+,
+,Expected Handling: Delivery carried out using autonomous vehicles for efficient and driverless transportation.
+,
+Resource Allocation Strategy,10: Resource Allocation Strategy
+,
+,Optimizing Delivery Routes: Allocating resources to minimize delivery time and cost
+,
+,Expected Handling: Routes optimized to utilize resources efficiently and reduce overall delivery expenses.
+,Fleet Management: Allocating vehicles based on delivery volume and distance
+,
+,Expected Handling: Vehicles allocated strategically to meet varying delivery demands and optimize fleet utilization.
+,Personnel Allocation: Allocating delivery personnel based on workload and expertise
+,
+,"Expected Handling: Personnel assigned to deliveries based on their availability, skills, and experience."
+,Inventory Management: Allocating inventory based on demand and storage capacity
+,
+,Expected Handling: Inventory allocated to distribution centers and vehicles based on real-time demand and storage availability.
+,Time Management: Allocating time slots for deliveries based on urgency and customer preferences
+,
+,Expected Handling: Delivery schedules optimized to prioritize urgent deliveries and accommodate customer preferences.
+,Fuel Management: Allocating fuel resources efficiently to minimize costs and environmental impact
+,
+,Expected Handling: Fuel consumption optimized through route planning and vehicle maintenance to reduce expenses and emissions.
+,Maintenance Scheduling: Allocating resources for vehicle maintenance and repairs
+,
+,"Expected Handling: Vehicles scheduled for maintenance based on mileage, usage patterns, and maintenance schedules to ensure fleet reliability."
+,Technology Allocation: Allocating resources for technological infrastructure and upgrades
+,
+,"Expected Handling: Investments made in technology to improve route optimization, tracking, and customer service capabilities."
+,Emergency Resource Allocation: Allocating resources for handling unforeseen events such as vehicle breakdowns or weather emergencies
+,
+,Expected Handling: Contingency plans in place to allocate resources swiftly and effectively in response to emergencies.
+,Labor Allocation: Allocating workforce resources for peak demand periods or special projects
+,
+,Expected Handling: Staffing levels adjusted to meet fluctuating delivery demands and ensure timely completion of projects.
+,
+,
+Delivery Time Slot Confirmation,Delivery Time Slot Confirmation
+,
+,Customer Request for Morning Delivery: Customer selects a delivery time slot between 9:00 AM to 11:00 AM.
+,
+,Expected Handling: Confirmation of delivery time slot within the requested morning window.
+,Customer Request for Afternoon Delivery: Customer selects a delivery time slot between 2:00 PM to 5:00 PM.
+,
+,Expected Handling: Confirmation of delivery time slot within the requested afternoon window.
+,Customer Request for Evening Delivery: Customer selects a delivery time slot between 6:00 PM to 8:00 PM.
+,
+,Expected Handling: Confirmation of delivery time slot within the requested evening window.
+,Customer Request for Specific Time: Customer requests delivery at 3:30 PM due to availability.
+,
+,Expected Handling: Confirmation of delivery at the specific requested time slot.
+,Customer Request for Flexible Delivery: Customer selects a flexible delivery option with a range of time slots.
+,
+,Expected Handling: Confirmation of delivery within the flexible time frame chosen by the customer.
+,Multiple Deliveries with Overlapping Time Slots: Several customers request delivery within the same time slot.
+,
+,Expected Handling: Efficient scheduling and confirmation of deliveries within overlapping time slots.
+,Capacity Limitation: Delivery slots filling up quickly due to high demand.
+,
+,Expected Handling: Notification to customers regarding limited availability and confirmation of available delivery time slots.
+,Real-Time Updates: Delivery time slot availability changes due to cancellations or rescheduling.
+,
+,Expected Handling: Immediate notification to affected customers and confirmation of revised delivery time slots.
+,Customizable Time Slot Selection: Customer selects preferred delivery time slot from a range of options.
+,
+,Expected Handling: Confirmation of customer's selected delivery time slot according to availability.
+,Special Occasion Delivery: Customer requests delivery on a specific date and time for a special event.
+,
+,Expected Handling: Confirmation of delivery time slot aligned with the customer's requested date and time for the event.
+,
+Alternative Route Planning,12: Alternative Route Planning
+,
+,Road Closure on Planned Route: Planned route encounters road closure due to maintenance.
+,
+,Expected Handling: Automatic rerouting to an alternative route to bypass the road closure.
+,Traffic Jam on Planned Route: Planned route experiences heavy traffic congestion.
+,
+,Expected Handling: Automatic rerouting to an alternative route with lighter traffic flow.
+,Construction Work on Planned Route: Planned route affected by ongoing construction work.
+,
+,Expected Handling: Automatic rerouting to an alternative route to avoid construction zones.
+,Accident on Planned Route: Planned route blocked due to a traffic accident.
+,
+,Expected Handling: Automatic rerouting to an alternative route to circumvent the accident site.
+,Weather-Related Obstacle on Planned Route: Planned route obstructed by weather-related conditions like flooding or fallen trees.
+,
+,Expected Handling: Automatic rerouting to an alternative route unaffected by weather obstacles.
+,Emergency Vehicle Passage: Planned route required to make way for emergency vehicles.
+,
+,Expected Handling: Automatic rerouting to an alternative route to allow passage for emergency vehicles.
+,Narrow or Inaccessible Roads: Planned route includes roads unsuitable for delivery vehicles.
+,
+,Expected Handling: Automatic rerouting to alternative roads suitable for delivery vehicles.
+,Low Clearance Obstacle: Planned route includes an underpass with insufficient clearance for delivery vehicle height.
+,
+,Expected Handling: Automatic rerouting to an alternative route avoiding low clearance obstacles.
+,Bridge Closure: Planned route affected by closure of a bridge.
+,
+,Expected Handling: Automatic rerouting to an alternative route detouring around the closed bridge.
+,Time-Efficient Route: Alternative route identified to reduce overall delivery time.
+,
+,Expected Handling: Automatic rerouting to the most time-efficient alternative route available.
+,
+Vehicle Breakdown Handling,13: Vehicle Breakdown Handling
+,
+,Mechanical Failure During Delivery: Delivery vehicle breaks down en route to the destination.
+,
+,Expected Handling: Immediate dispatch of a replacement vehicle or roadside assistance to ensure timely delivery.
+,Tire Puncture: Delivery vehicle suffers a tire puncture during delivery.
+,
+,Expected Handling: Swift repair or replacement of the damaged tire to resume delivery operations.
+,Engine Overheating: Delivery vehicle's engine overheats due to prolonged operation.
+,
+,Expected Handling: Vehicle cooling and maintenance measures implemented to address the issue and resume delivery.
+,"Battery Failure: Delivery vehicle experiences a battery failure, resulting in an inability to start."
+,
+,Expected Handling: Jump-start or replacement of the battery to restore vehicle functionality and resume delivery.
+,Fuel Exhaustion: Delivery vehicle runs out of fuel during delivery.
+,
+,Expected Handling: Emergency refueling or dispatch of a fuel truck to replenish the vehicle's fuel supply.
+,Transmission Malfunction: Delivery vehicle encounters transmission issues impeding its operation.
+,
+,Expected Handling: Immediate assessment and repair of the transmission to resume delivery.
+,Electronic System Failure: Delivery vehicle experiences electrical system failure affecting its operation.
+,
+,Expected Handling: Diagnosis and repair of the electrical system to restore vehicle functionality and resume delivery.
+,Brake Failure: Delivery vehicle's brakes malfunction during operation.
+,
+,Expected Handling: Emergency repair or replacement of the brakes to ensure safe operation and resume delivery.
+,Steering System Malfunction: Delivery vehicle experiences steering system issues affecting its maneuverability.
+,
+,Expected Handling: Prompt repair or replacement of the steering system to ensure safe operation and resume delivery.
+,Suspension System Damage: Delivery vehicle's suspension system sustains damage impacting its stability.
+,
+,Expected Handling: Repair or replacement of the suspension system components to restore vehicle stability and resume delivery.
+,
+High Traffic Period Handling,14: High Traffic Period Handling
+,
+,Rush Hour Traffic: Delivery scheduled during morning or evening rush hours.
+,
+,Expected Handling: Route optimization to navigate through heavy traffic and minimize delivery time.
+,Commuter Traffic: Delivery coincides with peak commuter traffic periods.
+,
+,Expected Handling: Route planning to avoid major commuter routes and utilize less congested roads.
+,School Pickup Traffic: Delivery scheduled during school pickup times causing increased traffic congestion.
+,
+,Expected Handling: Route adjustment to avoid school zones and minimize delays due to pickup traffic.
+,Event Traffic: Delivery during a major event causing traffic congestion in the area.
+,
+,Expected Handling: Route optimization to bypass event venues and avoid traffic associated with the event.
+,Holiday Traffic: Delivery during peak holiday shopping periods.
+,
+,Expected Handling: Route planning to avoid shopping districts and congested areas during peak holiday traffic.
+,Tourist Traffic: Delivery in tourist-heavy areas during peak tourist seasons.
+,
+,Expected Handling: Route optimization to navigate around tourist attractions and minimize delays due to tourist traffic.
+,Sporting Event Traffic: Delivery coinciding with sporting events causing increased traffic flow.
+,
+,Expected Handling: Route adjustment to avoid stadiums and event venues affected by sporting events.
+,Concert Traffic: Delivery during concerts or music festivals causing traffic congestion.
+,
+,Expected Handling: Route planning to bypass concert venues and high-traffic areas affected by the event.
+,Parade Traffic: Delivery scheduled during parades or street festivals.
+,
+,Expected Handling: Route optimization to avoid parade routes and streets closed for festivities.
+,Construction Traffic: Delivery during road construction or maintenance work causing lane closures.
+,
+,Expected Handling: Route adjustment to navigate around construction zones and minimize delays due to traffic diversions.
+,
+Peak Demand Handling,15: Peak Demand Handling
+,
+,Holiday Season Demand: Surge in delivery requests during the holiday season.
+,
+,Expected Handling: Increased staffing and fleet deployment to accommodate high delivery demand.
+,Sales Event Demand: Surge in delivery requests during promotional sales events.
+,
+,Expected Handling: Temporary increase in delivery capacity to meet heightened demand during sales events.
+,Special Occasion Demand: Surge in delivery requests for special occasions like birthdays or anniversaries.
+,
+,Expected Handling: Priority handling of special occasion deliveries to ensure timely arrival.
+,Weather-Related Demand: Surge in delivery requests during inclement weather conditions.
+,
+,Expected Handling: Enhanced logistics planning to meet increased demand during adverse weather conditions.
+,Seasonal Demand: Surge in delivery requests during specific seasons such as summer or back-to-school season.
+,
+,Expected Handling: Adaptive resource allocation to accommodate seasonal fluctuations in delivery demand.
+,Product Launch Demand: Surge in delivery requests following the launch of a highly anticipated product.
+,
+,Expected Handling: Prioritization of product launch deliveries to capitalize on market demand and meet customer expectations.
+,Local Event Demand: Surge in delivery requests during local events like festivals or community gatherings.
+,
+,Expected Handling: Specialized event logistics planning to handle increased demand and ensure timely delivery.
+,New Market Demand: Surge in delivery requests upon entering a new market or expanding service coverage.
+,
+,Expected Handling: Strategic resource allocation and infrastructure investment to support growth and meet new market demand.
+,Advertising Campaign Demand: Surge in delivery requests following a successful advertising campaign.
+,
+,Expected Handling: Scalable delivery infrastructure to capitalize on increased demand generated by advertising efforts.
+,External Factors Impacting Demand: Surge in delivery requests due to external factors like competitor actions or industry trends.
+,
+,"Expected Handling: Agile response to external factors, including capacity adjustments and promotional incentives, to address increased demand."
+,
+Variable Delivery Windows,16: Variable Delivery Windows
+,
+,Flexible Delivery Timing: Customer requests delivery within a flexible time window.
+,
+,Expected Handling: Confirmation of delivery within the customer's specified flexible time frame.
+,Morning or Afternoon Delivery Preference: Customer selects preferred delivery window of morning or afternoon.
+,
+,Expected Handling: Confirmation of delivery within the customer's chosen morning or afternoon time slot.
+,Specific Time Request: Customer specifies a specific delivery time window based on personal availability.
+,
+,Expected Handling: Confirmation of delivery within the customer's requested specific time frame.
+,Weekend Delivery Preference: Customer requests delivery on a weekend due to availability.
+,
+,Expected Handling: Confirmation of delivery scheduled for the requested weekend time slot.
+,Evening Delivery Request: Customer selects a delivery window during the evening hours.
+,
+,Expected Handling: Confirmation of delivery within the customer's chosen evening time slot.
+,Same-Day Delivery Window: Customer requests delivery within the same day of order placement.
+,
+,Expected Handling: Confirmation of delivery scheduled for the same day within the customer's specified time window.
+,Next-Day Delivery Window: Customer selects a delivery window for the following day after order placement.
+,
+,Expected Handling: Confirmation of delivery scheduled for the next day within the customer's chosen time slot.
+,Weekend or Weekday Preference: Customer specifies preference for weekend or weekday delivery.
+,
+,Expected Handling: Confirmation of delivery scheduled based on the customer's chosen weekend or weekday time frame.
+,Early Morning Delivery Request: Customer requests delivery during the early morning hours.
+,
+,Expected Handling: Confirmation of delivery within the customer's chosen early morning time slot.
+,Holiday Delivery Window: Customer selects a delivery window on a specific holiday.
+,
+,Expected Handling: Confirmation of delivery scheduled for the requested holiday time slot.
+,
+Unexpected Order Cancellation,Unexpected Order Cancellation
+,
+,Customer Request for Order Cancellation: Customer cancels the order before dispatch.
+,
+,"Expected Handling: Order cancellation processed, and delivery operation halted."
+,Inventory Shortage: Order cancellation due to insufficient inventory.
+,
+,"Expected Handling: Order cancellation processed, and affected customers notified of the shortage."
+,Payment Failure: Order cancellation due to payment processing issues.
+,
+,"Expected Handling: Order cancellation processed, and customer contacted for payment resolution."
+,Delivery Unfeasibility: Order cancellation due to unforeseen delivery constraints.
+,
+,"Expected Handling: Order cancellation processed, and alternative delivery options explored if feasible."
+,Customer Change of Plans: Order cancellation due to customer change of plans or circumstances.
+,
+,"Expected Handling: Order cancellation processed, and customer offered flexibility for rescheduling or alternative arrangements."
+,Product Unavailability: Order cancellation due to product unavailability or discontinuation.
+,
+,"Expected Handling: Order cancellation processed, and customer notified of product unavailability with possible alternatives offered."
+,External Factors Impacting Delivery: Order cancellation due to external factors like natural disasters or transportation disruptions.
+,
+,"Expected Handling: Order cancellation processed, and affected customers provided with timely updates and support."
+,Fraudulent Activity: Order cancellation due to suspected fraudulent activity or security concerns.
+,
+,"Expected Handling: Order cancellation processed, and security measures implemented to prevent further fraudulent transactions."
+,Regulatory Compliance Issues: Order cancellation due to non-compliance with regulatory requirements.
+,
+,"Expected Handling: Order cancellation processed, and compliance issues addressed to prevent future occurrences."
+,Technical Glitch: Order cancellation due to technical glitches or system errors.
+,
+,
+  Scenario: User searches for a specific medicine ,Valid Search:
+,
+,"Input: User enters ""Aspirin"" in the search bar."
+,"Expected Output: User sees a list of relevant medicines containing Aspirin with their respective names, dosages, and prices."
+,No Results Found:
+,
+,Input: User enters a non-existent medicine name.
+,Expected Output: User receives a message indicating no results were found for the given search term.
+,Search with Special Characters:
+,
+,"Input: User enters ""Aspirin 500mg"" in the search bar."
+,Expected Output: User sees a list of relevant medicines containing Aspirin with specified dosage and prices.
+,Multiple Matches:
+,
+,"Input: User enters ""Aspirin"" which matches multiple products."
+,"Expected Output: User sees a list of all medicines containing Aspirin with their respective names, dosages, and prices."
+,Case Insensitivity:
+,
+,"Input: User enters ""aspirin"" in lowercase."
+,"Expected Output: User sees a list of relevant medicines containing Aspirin with their respective names, dosages, and prices regardless of case sensitivity."
+,
+  Scenario: User searches for medicines with a specific condition ,Valid Condition Search:
+,
+,"Input: User enters ""Cold"" in the search bar."
+,"Expected Output: User sees a list of medicines related to the specified condition with their names, dosages, and prices."
+,Broad Condition Search:
+,
+,"Input: User enters a general term like ""Allergy"" in the search bar."
+,"Expected Output: User sees a list of medicines related to allergies with their names, dosages, and prices."
+,Condition with No Matching Medicines:
+,
+,Input: User enters a specific condition with no related medicines available.
+,Expected Output: User receives a message indicating no medicines are available for the given condition.
+,Partial Match:
+,
+,"Input: User enters ""Flu"" which has medications for cold and flu."
+,"Expected Output: User sees a list of medicines related to cold and flu with their names, dosages, and prices."
+,Condition with Multiple Categories:
+,
+,"Input: User enters ""Pain"" which could include headache, muscle pain, etc."
+,"Expected Output: User sees a list of medicines related to different types of pain with their names, dosages, and prices."
+,
+  Scenario: User searches for over-the-counter (OTC) products ,Filter Applied Successfully:
+,
+,Input: User applies the filter for over-the-counter products.
+,"Expected Output: User sees a list of OTC medicines with their names, dosages, and prices."
+,Mixed Results with OTC Filter:
+,
+,"Input: User applies the OTC filter, and there are both OTC and prescription medicines."
+,"Expected Output: User sees only OTC medicines in the search results with their names, dosages, and prices."
+,No OTC Products Available:
+,
+,"Input: User applies the OTC filter, but there are no OTC products listed."
+,Expected Output: User receives a message indicating no over-the-counter medicines are available.
+,Filter Reset:
+,
+,Input: User applies the OTC filter and then resets all filters.
+,"Expected Output: User sees all medicines, both OTC and prescription, with their names, dosages, and prices."
+,Filter Application with Pagination:
+,
+,Input: User applies the OTC filter and the search results span multiple pages.
+,"Expected Output: User sees a list of OTC medicines across all pages with their names, dosages, and prices."
+,
+  Scenario: User searches for prescription-only medicines ,Filter Applied Successfully:
+,
+,Input: User applies the filter for prescription-only medicines.
+,"Expected Output: User sees a list of prescription-only medicines with their names, dosages, and prices."
+,Mixed Results with Prescription Filter:
+,
+,"Input: User applies the prescription-only filter, and there are both OTC and prescription medicines."
+,"Expected Output: User sees only prescription medicines in the search results with their names, dosages, and prices."
+,No Prescription Products Available:
+,
+,"Input: User applies the prescription-only filter, but there are no prescription products listed."
+,Expected Output: User receives a message indicating no prescription-only medicines are available.
+,Filter Reset:
+,
+,Input: User applies the prescription-only filter and then resets all filters.
+,"Expected Output: User sees all medicines, both OTC and prescription, with their names, dosages, and prices."
+,Filter Application with Pagination:
+,
+,Input: User applies the prescription-only filter and the search results span multiple pages.
+,"Expected Output: User sees a list of prescription-only medicines across all pages with their names, dosages, and prices."
+,
+  Scenario: User clicks on a medicine from the search results ,Test Cases for User Clicks on a Medicine from the Search Results
+,
+,Valid Selection:
+,
+,"Input: User searches for ""Paracetamol"" and clicks on a specific Paracetamol product."
+,"Expected Output: User is directed to the medicine details page showing detailed information, including usage instructions and precautions."
+,No Selection Made:
+,
+,Input: User searches for a medicine but doesn't click on any specific product.
+,Expected Output: User remains on the search results page without any change.
+,Error Handling:
+,
+,Input: User clicks on a medicine that is no longer available or has been removed.
+,Expected Output: User receives an error message indicating the selected medicine is not available.
+,Back Navigation:
+,
+,"Input: User clicks on a medicine, views its details, and then navigates back to the search results."
+,Expected Output: User returns to the search results page with the previously viewed medicine still listed.
+,Navigation from Different Pages:
+,
+,Input: User clicks on a medicine from the search results page that spans multiple pages.
+,Expected Output: User is directed to the medicine details page from whichever page the medicine was clicked.
+,
+Senario: User Searches for Medicines Based on Symptoms,Test Cases for User Searches for Medicines Based on Symptoms
+,
+,Valid Symptom Search:
+,
+,"Input: User enters ""Headache"" in the symptom search bar."
+,"Expected Output: User sees a list of medicines recommended for headache relief with their names, dosages, and prices."
+,Broad Symptom Search:
+,
+,"Input: User enters ""Pain"" in the symptom search bar."
+,"Expected Output: User sees a list of medicines recommended for different types of pain relief with their names, dosages, and prices."
+,No Matching Symptoms:
+,
+,"Input: User enters a symptom that has no directly related medicines, like ""Fatigue."""
+,Expected Output: User receives a message indicating no medicines are available for the given symptom.
+,Partial Symptom Match:
+,
+,"Input: User enters ""Migraine"" which could also include headache medications."
+,"Expected Output: User sees a list of medicines recommended for migraine and headache relief with their names, dosages, and prices."
+,Symptom Search with Filters:
+,
+,"Input: User enters ""Sore Throat"" and applies additional filters like OTC or prescription-only."
+,"Expected Output: User sees a refined list of medicines recommended for sore throat relief based on the applied filters, with their names, dosages, and prices."
+,
+User Adds a New Address,Test Cases for User Adds a New Address
+,
+,Valid Address Addition:
+,
+,"Input: User clicks on ""Add Address"" button and fills in all required address details."
+,Expected Output: User receives a confirmation message and the new address is successfully added to the address book.
+,Duplicate Address Addition:
+,
+,Input: User attempts to add an address that already exists in the address book.
+,Expected Output: User receives an error message indicating that the address already exists and cannot be added again.
+,Invalid Address Format:
+,
+,Input: User adds an address with invalid format or characters in one of the fields.
+,Expected Output: User receives an error message indicating that the address format is invalid and needs to be corrected.
+,Empty Address Fields:
+,
+,Input: User attempts to add an address with one or more required fields left empty.
+,Expected Output: User receives an error message indicating that certain fields are required and must be filled.
+,Cancel Addition:
+,
+,"Input: User starts filling out the address details but decides to cancel by navigating away from the page or clicking a ""Cancel"" button."
+,"Expected Output: No changes are made to the address book, and the user remains on the address management page."
+,
+User Attempts to Add an Address with Missing Information,Test Cases for User Attempts to Add an Address with Missing Information
+,
+,Missing Information:
+,
+,"Input: User clicks on ""Add Address"" button but leaves one or more required fields empty."
+,Expected Output: User receives an error message indicating which fields are missing and needs to be filled.
+,Partial Address Information:
+,
+,Input: User fills in only a few of the required address fields and attempts to save.
+,Expected Output: User receives an error message indicating that all required fields must be filled before saving the address.
+,Invalid Input in Address Fields:
+,
+,Input: User enters invalid characters or format in one or more address fields.
+,Expected Output: User receives an error message indicating that the entered information is invalid and needs correction.
+,Empty Address Field:
+,
+,Input: User attempts to add an address with one of the required fields left empty.
+,Expected Output: User receives an error message indicating which field(s) are required and must be filled.
+,Cancel Address Addition:
+,
+,"Input: User starts filling out the address details but decides to cancel by clicking a ""Cancel"" button before saving."
+,"Expected Output: No changes are made to the address book, and the user remains on the address management page."
+,
+ User Selects a Previously Added Address,Test Cases for User Selects a Previously Added Address
+,
+,Select Existing Address:
+,
+,Input: User has at least one existing address in their address book and selects one of them.
+,"Expected Output: The selected address is highlighted, and the user sees options to edit or delete the address."
+,No Existing Address:
+,
+,Input: User attempts to select an address from an empty address book.
+,Expected Output: User sees a message indicating that there are no addresses available to select.
+,Edit or Delete Options:
+,
+,Input: User selects an existing address from the address book.
+,Expected Output: User sees options to edit or delete the selected address.
+,Multiple Addresses Selection:
+,
+,Input: User has multiple addresses in the address book and selects more than one.
+,"Expected Output: Only one address can be selected at a time, so only the last selected address should remain highlighted."
+,No Address Selection:
+,
+,Input: User navigates to the address management page without selecting any address.
+,Expected Output: User does not see any address highlighted and no edit or delete options are displayed.
+,
+User Edits an Existing Address,Test Cases for User Edits an Existing Address
+,
+,Valid Address Edit:
+,
+,"Input: User selects an existing address from the address book, modifies the details, and saves."
+,"Expected Output: User receives a confirmation message, and the edited address details are updated in the address book."
+,Cancel Edit:
+,
+,"Input: User starts editing an address but decides to cancel by clicking a ""Cancel"" button."
+,"Expected Output: No changes are made to the address book, and the user remains on the address management page."
+,Edit Address with Invalid Information:
+,
+,Input: User modifies an address with invalid characters or format in one or more fields.
+,Expected Output: User receives an error message indicating that the edited information is invalid and needs correction.
+,Edit Address with Missing Information:
+,
+,Input: User modifies an address but leaves one or more required fields empty.
+,Expected Output: User receives an error message indicating which fields are required and must be filled.
+,Edit Nonexistent Address:
+,
+,Input: User attempts to edit an address that does not exist in the address book.
+,Expected Output: User receives an error message indicating that the selected address cannot be found for editing.
+,
+User Deletes an Existing Address,Test Cases for User Deletes an Existing Address
+,
+,Valid Address Deletion:
+,
+,Input: User selects an existing address from the address book and confirms deletion.
+,"Expected Output: User receives a confirmation prompt and upon confirmation, the selected address is removed from the address book."
+,Cancel Deletion:
+,
+,"Input: User selects an address for deletion but decides to cancel by closing the confirmation prompt or clicking a ""Cancel"" button."
+,"Expected Output: No changes are made to the address book, and the selected address remains intact."
+,Delete Nonexistent Address:
+,
+,Input: User attempts to delete an address that does not exist in the address book.
+,Expected Output: User receives an error message indicating that the selected address cannot be found for deletion.
+,Delete Address without Selection:
+,
+,Input: User navigates to the delete address functionality without selecting any address.
+,Expected Output: User receives an error message indicating that no address has been selected for deletion.
+,Multiple Addresses Deletion:
+,
+,Input: User selects multiple addresses for deletion at once.
+,"Expected Output: User can only delete one address at a time, so only the last selected address should be deleted upon confirmation."
+,
+ User Completes a Successful Payment,Test Cases for User Completes a Successful Payment
+,
+,Successful Payment with Valid Details:
+,
+,"Input: User selects payment method, enters valid payment details, and clicks ""Pay Now"" button."
+,"Expected Output: User receives a payment success confirmation, and the order status is updated to ""Paid."""
+,Payment Confirmation without Items in Cart:
+,
+,Input: User is on the checkout page without any items in the shopping cart and completes the payment process.
+,"Expected Output: User receives an error message indicating that the cart is empty, and payment cannot be processed."
+,Multiple Items in Cart:
+,
+,Input: User has multiple items in the shopping cart and completes the payment process.
+,"Expected Output: All items are successfully paid for, and the order status for each item is updated to ""Paid."""
+,Payment Timeout Handling:
+,
+,"Input: User takes too long to complete the payment process, and the session times out."
+,Expected Output: User is redirected to the checkout page with a message indicating that the payment session has expired.
+,Partial Payment:
+,
+,Input: User attempts to pay for only a subset of items in the cart.
+,Expected Output: User receives an error message indicating that all items in the cart must be paid for together.
+,
+ User Attempts Payment with Invalid Card Details,Test Cases for User Attempts Payment with Invalid Card Details
+,
+,Invalid Card Number:
+,
+,Input: User enters an invalid card number and attempts payment.
+,Expected Output: User receives an error message indicating that the card number is invalid and needs correction.
+,Expired Card:
+,
+,Input: User enters the details of an expired card and attempts payment.
+,Expected Output: User receives an error message indicating that the card has expired and needs to use a valid card.
+,Incorrect CVV:
+,
+,Input: User enters an incorrect CVV number and attempts payment.
+,Expected Output: User receives an error message indicating that the CVV is incorrect and needs correction.
+,Insufficient Funds:
+,
+,Input: User attempts payment with a card that has insufficient funds.
+,Expected Output: User receives an error message indicating that the payment could not be processed due to insufficient funds.
+,Payment Declined:
+,
+,Input: User attempts payment with a card that is declined by the issuing bank.
+,Expected Output: User receives an error message indicating that the payment was declined and should try another payment method.
+,
+User Cancels the Payment Process,Test Cases for User Cancels the Payment Process
+,
+,Cancellation Confirmation:
+,
+,Input: User decides to cancel the payment process after selecting the payment method.
+,"Expected Output: User is redirected back to the shopping cart, and the order status remains unchanged."
+,Cancellation at Payment Details Entry:
+,
+,"Input: User starts entering payment details but decides to cancel before clicking ""Pay Now."""
+,"Expected Output: User is redirected back to the shopping cart, and the order status remains unchanged."
+,Cancellation at Payment Method Selection:
+,
+,Input: User decides to cancel the payment process after selecting the payment method.
+,"Expected Output: User is redirected back to the shopping cart, and the order status remains unchanged."
+,Cancellation after Payment Initiation:
+,
+,"Input: User clicks ""Pay Now"" but decides to cancel before the payment is processed."
+,"Expected Output: User is redirected back to the shopping cart, and the order status remains unchanged."
+,Cancellation Confirmation Prompt:
+,
+,Input: User attempts to cancel the payment process and receives a confirmation prompt.
+,"Expected Output: Upon confirmation, the user is redirected back to the shopping cart, and the order status remains unchanged."
+,
+ User Selects a Different Payment Method,Test Cases for User Selects a Different Payment Method
+,
+,Successful Payment with Alternative Method:
+,
+,"Input: User selects an alternative payment method, enters valid payment details, and completes the payment."
+,"Expected Output: User receives a payment success confirmation, and the order status is updated to ""Paid"" with the new payment method."
+,Switching Payment Methods before Payment:
+,
+,Input: User starts with one payment method but switches to an alternative method before completing the payment.
+,"Expected Output: User successfully switches payment methods, enters valid details, and completes the payment."
+,Payment Method Switching with Timeout:
+,
+,"Input: User takes too long to switch payment methods, and the session times out."
+,Expected Output: User is redirected back to the checkout page with a message indicating that the session has expired.
+,Payment Method Switching Error:
+,
+,Input: User encounters an error while attempting to switch payment methods.
+,Expected Output: User receives an error message indicating the reason for the failure to switch payment methods.
+,Invalid Payment Details with Alternative Method:
+,
+,Input: User switches to an alternative payment method but enters invalid payment details.
+,Expected Output: User receives an error message indicating that the entered payment details are invalid and need correction.
+,
+ User Checks Payment History,Test Cases for User Checks Payment History
+,
+,Viewing Past Transactions:
+,
+,Input: User navigates to the payment history section.
+,"Expected Output: User sees a list of past transactions with details such as date, amount, and payment method."
+,Empty Payment History:
+,
+,Input: User has not completed any previous orders and navigates to the payment history section.
+,Expected Output: User sees a message indicating that there are no past transactions to display.
+,Multiple Transactions Display:
+,
+,"Input: User has completed multiple orders, and all transactions are displayed in the payment history section."
+,"Expected Output: Each transaction is listed with details such as date, amount, and payment method."
+,Sorting Transactions:
+,
+,"Input: User sorts past transactions by date, amount, or payment method."
+,Expected Output: Transactions are rearranged based on the selected sorting criteria.
+,Transaction Details View:
+,
+,Input: User clicks on a specific transaction to view its details.
+,"Expected Output: User sees detailed information about the selected transaction, including items purchased, order status, and payment details."
+,
+ User Checks Delivery Status with Valid Order ID,Test Cases for User Checks Delivery Status with Valid Order ID
+,
+,Valid Order ID Entered:
+,
+,Input: User navigates to the delivery tracking page and enters a valid order ID.
+,"Expected Output: User sees the current delivery status along with details such as estimated delivery date, courier information, and tracking updates."
+,Multiple Tracking Updates:
+,
+,Input: User checks the delivery status multiple times after entering the valid order ID.
+,"Expected Output: User sees updated tracking information each time, including any changes in delivery status or estimated delivery date."
+,Order Delivered:
+,
+,Input: User checks the delivery status after the order has been delivered.
+,Expected Output: User sees a confirmation that the order has been delivered along with the delivery date and recipient's signature if available.
+,Tracking with Different Devices:
+,
+,"Input: User accesses the delivery tracking page from different devices (e.g., mobile, desktop) using the same order ID."
+,Expected Output: User sees consistent tracking information regardless of the device used.
+,Large Order Tracking:
+,
+,Input: User checks the delivery status for an order with a large number of items.
+,"Expected Output: User sees tracking updates for each item in the order, along with consolidated information for the entire shipment."
+,
+ User Attempts to Track Delivery with an Invalid Order ID,Test Cases for User Attempts to Track Delivery with an Invalid Order ID
+,
+,Invalid Order ID Entered:
+,
+,Input: User navigates to the delivery tracking page and enters an invalid order ID.
+,"Expected Output: User receives an error message indicating an invalid order ID, and no delivery information is displayed."
+,Alpha-Numeric Order ID:
+,
+,Input: User enters an order ID containing both alphabetic and numeric characters.
+,Expected Output: User receives an error message indicating that the order ID format is incorrect and needs correction.
+,Order ID with Special Characters:
+,
+,Input: User enters an order ID containing special characters like punctuation marks.
+,Expected Output: User receives an error message indicating that the order ID format is incorrect and special characters are not allowed.
+,Order ID Length Limitation:
+,
+,Input: User enters an order ID that exceeds the maximum allowed length.
+,Expected Output: User receives an error message indicating that the order ID is too long and needs to be within the specified character limit.
+,Empty Order ID Field:
+,
+,Input: User attempts to track delivery without entering an order ID.
+,Expected Output: User receives an error message indicating that the order ID field cannot be left empty.
+,
+ User Tracks Delivery using an Order ID from Another User,Test Cases for User Tracks Delivery using an Order ID from Another User
+,
+,Order ID from Different Account Entered:
+,
+,Input: User attempts to track delivery using an order ID associated with a different user's account.
+,"Expected Output: User receives an error message indicating unauthorized access, and no delivery information is displayed."
+,Tracking Another User's Order ID:
+,
+,Input: User gains access to another user's order ID and attempts to track delivery with it.
+,"Expected Output: User receives an error message indicating unauthorized access, and no delivery information is displayed."
+,Security Measures for Cross-User Tracking:
+,
+,Input: User tries to manipulate the order ID to gain access to another user's delivery information.
+,"Expected Output: The system detects the unauthorized attempt and blocks access, displaying an error message to the user."
+,
+User Checks Delivery Status before Payment,Test Cases for User Checks Delivery Status before Payment
+,
+,Order ID Entered before Payment:
+,
+,Input: User navigates to the delivery tracking page and enters the order ID before completing the payment process.
+,"Expected Output: User receives an error message indicating that the order is not yet shipped, and no delivery information is displayed."
+,Partial Payment:
+,
+,Input: User completes partial payment for the order and then tries to track delivery.
+,"Expected Output: User receives an error message indicating that the order is not yet shipped, and no delivery information is displayed until full payment is completed."
+,Order ID Entry during Checkout:
+,
+,Input: User enters the order ID on the checkout page before completing the payment process.
+,Expected Output: User is informed that the order is not yet shipped and is prompted to complete the payment before tracking delivery.
+,
+S,Test Cases for User Receives Notifications for Delivery Updates
+,
+,Opt-in for Delivery Notifications:
+,
+,Input: User selects the option to receive delivery notifications during the checkout process.
+,Expected Output: User receives notifications via email or SMS whenever there are updates in the delivery status.
+,Notification Frequency:
+,
+,Input: User checks the delivery status and receives notifications for each tracking update.
+,"Expected Output: User receives notifications promptly after each tracking update, ensuring real-time information."
+,Notification Format:
+,
+,"Input: User receives a notification and checks its format (e.g., email content, SMS format)."
+,"Expected Output: The notification contains clear and concise information about the delivery status, including any changes or updates."
+,Opt-out of Delivery Notifications:
+,
+,Input: User initially opts-in for delivery notifications but later decides to opt-out.
+,Expected Output: User successfully opts-out of delivery notifications and no longer receives updates via email or SMS.
+,Delivery Confirmation Notification:
+,
+,Input: User receives a notification confirming the delivery of the order.
+,"Expected Output: The delivery confirmation notification includes details such as delivery date, recipient's signature (if available), and any additional delivery notes."
+,
+Expense Creation:,
+"Verify that users can successfully create a new expense with all required details (amount, description, date, participants).",Expense Creation:
+,
+,Test Case 1: Successful Expense Creation
+,"Input: Valid amount, description, date, and participants."
+,"Expected Output: Expense is created successfully, and balances are updated accordingly."
+"Test if the application handles invalid input gracefully (e.g., negative amounts, missing participants).",Handling Invalid Input:
+,
+,Test Case 2: Negative Amount
+,Input: Expense amount is negative.
+,Expected Output: Application displays an error message indicating that the amount cannot be negative.
+,Test Case 3: Missing Participants
+,Input: Attempt to create an expense without selecting any participants.
+,Expected Output: Application prompts the user to select participants and does not allow expense creation until participants are selected.
+"Ensure that expenses can be categorized correctly (e.g., groceries, utilities, rent).",Expense Categorization:
+,
+,Test Case 4: Categorizing Expense as Groceries
+,"Input: Create an expense with the category set to ""Groceries."""
+,"Expected Output: Expense is categorized as groceries, and the category is displayed correctly in the expense details."
+,Test Case 5: Categorizing Expense as Utilities
+,"Input: Create an expense with the category set to ""Utilities."""
+,"Expected Output: Expense is categorized as utilities, and the category is displayed correctly in the expense details."
+,Test Case 6: Categorizing Expense as Rent
+,"Input: Create an expense with the category set to ""Rent."""
+,"Expected Output: Expense is categorized as rent, and the category is displayed correctly in the expense details."
+Expense Editing:,
+,
+"Check if users can edit existing expenses (changing amount, description, participants).",Editing Existing Expenses:
+,
+,Test Case 1: Change Amount
+,Input: User edits an existing expense and changes the amount.
+,"Expected Output: The expense amount is updated, and balances are recalculated accordingly."
+,Test Case 2: Change Description
+,Input: User edits an existing expense and changes the description.
+,"Expected Output: The expense description is updated, and other details remain unchanged."
+,Test Case 3: Change Participants
+,Input: User edits an existing expense and changes the participants involved.
+,"Expected Output: The expense participants are updated, and balances are recalculated accordingly."
+,
+Verify that editing an expense recalculates debts and shares accurately.,Recalculation of Debts and Shares:
+,
+,Test Case 4: Equal Split Expense
+,Input: Edit an existing expense with an equal split among participants.
+,"Expected Output: After editing, verify that debts and shares are recalculated accurately with the updated expense details."
+,Test Case 5: Unequal Split Expense
+,Input: Edit an existing expense with an unequal split among participants.
+,"Expected Output: After editing, verify that debts and shares are recalculated accurately considering the new split among participants."
+,Test Case 6: Expense Reduction
+,Input: Edit an existing expense and reduce the amount.
+,"Expected Output: Ensure that debts and shares are recalculated accurately, reflecting the reduced expense amount among participants."
+,Test Case 7: Expense Deletion
+,Input: Edit an existing expense and delete it.
+,"Expected Output: Ensure that the expense is removed from the system, and debts are recalculated accordingly, considering the removed expense."
+,
+Debt Calculation:,Equal Split Expenses:
+,
+"Create expenses with various amounts and participants, then verify that the application accurately calculates debts between users.",Test Case 1: Equal Split Among Two Participants
+,Input: Create an expense with an equal split amount between two participants.
+,"Expected Output: Verify that each participant owes half of the expense amount to the other, resulting in equal debts."
+,Test Case 2: Equal Split Among Multiple Participants
+,Input: Create an expense with an equal split amount among multiple participants.
+,"Expected Output: Ensure that each participant owes an equal share of the expense amount to all other participants, resulting in equal debts among them."
+,
+"Test scenarios with unequal splits (e.g., one user pays more than others).",Unequal Split Expenses:
+,
+,Test Case 3: Unequal Split Among Two Participants
+,"Input: Create an expense with an uneven split amount between two participants (e.g., one pays 60%, the other pays 40%)."
+,"Expected Output: Verify that debts are calculated accurately according to the uneven split, reflecting the respective percentages paid by each participant."
+,Test Case 4: Unequal Split Among Multiple Participants
+,Input: Create an expense with an uneven split amount among multiple participants.
+,"Expected Output: Ensure that debts are calculated accurately considering the specific percentages paid by each participant, resulting in varying debt amounts among them."
+,Multiple Expenses:
+,
+,Test Case 5: Multiple Expenses with Varying Splits
+,"Input: Create multiple expenses with different split configurations (equal, unequal)."
+,Expected Output: Verify that the application accurately calculates the cumulative debts among participants considering all expenses.
+,Expense Settlement:
+,
+,Test Case 6: Settlement of Debts
+,Input: Settle debts between participants by marking them as paid.
+,"Expected Output: Verify that the balances are updated correctly after settlement, ensuring that participants no longer owe each other settled amounts."
+,
+Settlements:,Marking Debts as Settled:
+,
+Test if users can mark debts as settled and verify that the balances are updated accordingly.,Test Case 1: Single Debt Settlement
+Ensure that settlements are reflected in individual and group balances accurately.,Input: User marks a single debt between two participants as settled.
+,"Expected Output: Verify that the debt is marked as settled, and the balances of both participants are updated accordingly."
+,Test Case 2: Multiple Debt Settlements
+,Input: User settles multiple debts involving different participants.
+,"Expected Output: Ensure that all settled debts are accurately reflected, and individual balances are updated accordingly."
+,Individual Balance Update:
+,
+,Test Case 3: Debt Settled in Favor of One Participant
+,Input: One participant settles a debt owed to them by another participant.
+,Expected Output: Verify that the balance of the participant who received the settlement is updated to reflect the payment received.
+,Test Case 4: Debt Settled by Paying Partial Amount
+,Input: Participant settles a debt by paying only a portion of the total amount owed.
+,Expected Output: Ensure that the balance of both participants involved is updated to reflect the partial payment made and the remaining amount owed.
+,Group Balance Update:
+,
+,Test Case 5: Settlement Impact on Group Balances
+,Input: Settlement of debts among multiple participants impacts the overall group balances.
+,"Expected Output: Verify that the group balances are updated accurately, considering all settled debts among participants."
+,Verification of Settlements:
+,
+,Test Case 6: Verification of Settlement Records
+,Input: User checks the settlement history to verify past settlements.
+,"Expected Output: Ensure that all settled debts are recorded correctly in the settlement history, providing transparency to users regarding past transactions."
+,
+Location Tracking:,Valid Route Selection:
+,
+Test Scenario: Verify that the application accurately displays the real-time location of buses running on a specific route.,Test Case: Ensure the application correctly tracks buses on the selected route.
+Steps:,Steps:
+Select a route for tracking.,Select a known route with active bus services.
+Confirm that the displayed location of the bus matches its actual position on the map.,Verify that the application displays buses running on the chosen route.
+Check for any delays in updating the bus's location.,Bus Position Accuracy:
+,
+,Test Case: Confirm that the displayed location of the bus accurately reflects its real-time position.
+,Steps:
+,Select a route with a bus currently in operation.
+,"Note the bus's actual location through other means (e.g., visual confirmation or official data)."
+,Compare the bus's actual position with its displayed location on the application's map.
+,Verify that the displayed location matches the actual position within an acceptable margin of error.
+,Real-time Update Check:
+,
+,Test Case: Ensure the application updates the bus's location in real-time.
+,Steps:
+,Track a bus's location using the application.
+,Continuously monitor the bus's movement in real-time.
+,Observe the frequency of location updates provided by the application.
+,Ensure that the application consistently updates the bus's location with minimal delay.
+,Route Invariant Tracking:
+,
+,Test Case: Verify that the application accurately tracks buses regardless of the direction of travel along the route.
+,Steps:
+,Choose a route with buses traveling in both directions.
+,Select a bus traveling in one direction and track its location.
+,Repeat the process for a bus traveling in the opposite direction.
+,Confirm that the application correctly displays the real-time locations of buses irrespective of their direction of travel.
+,Inactive Route Handling:
+,
+,Test Case: Ensure the application handles tracking for routes with no active buses gracefully.
+,Steps:
+,Select a route with no active bus services at the moment.
+,Verify that the application informs the user appropriately about the lack of available buses.
+,Confirm that the map remains clear of any bus markers for the inactive route.
+,Network Interruption Recovery:
+,
+,Test Case: Verify that the application recovers gracefully after a network interruption.
+,Steps:
+,Track a bus's location while maintaining a stable internet connection.
+,"Simulate a temporary network interruption (e.g., enable airplane mode)."
+,Restore the internet connection.
+,Verify that the application resumes tracking the bus's location without any data loss or disruption.
+,
+Next Bus Availability:,Valid Location and Route:
+,
+Test Scenario: Ensure the application provides accurate information about the next bus available at the user's location.,Test Case: Confirm that the application accurately predicts the next bus arrival at a specific location for a known route.
+Steps:,Steps:
+Set the current location to a specific point on the map.,Set the current location to a known bus stop on an active route.
+Verify that the application correctly displays the estimated arrival time of the next bus at that location.,Verify that the application displays the estimated arrival time of the next bus at that location.
+Check if the estimated time matches the actual arrival time of the next bus.,Compare the estimated arrival time with the scheduled timetable for the selected route.
+,Multiple Bus Stops on Route:
+,
+,Test Case: Ensure the application handles multiple bus stops along a route and provides accurate arrival times for each.
+,Steps:
+,Set the current location to a point between two bus stops on a route.
+,Verify that the application displays the estimated arrival times for buses at both nearby stops.
+,Confirm that the estimated arrival times align with the buses' expected schedules.
+,Dynamic Bus Schedules:
+,
+,Test Case: Validate that the application adjusts the estimated arrival time based on real-time bus positions and traffic conditions.
+,Steps:
+,Set the current location to a point on a route known for traffic congestion during certain times of the day.
+,Verify that the application factors in current traffic conditions and adjusts the estimated arrival time accordingly.
+,Compare the adjusted arrival time with the expected delay due to traffic.
+,Bus Arrival Notification:
+,
+,Test Case: Ensure the application notifies the user when a bus is approaching the selected location.
+,Steps:
+,Set the current location to a bus stop.
+,Verify that the application provides a notification when a bus is within a specified distance from the stop.
+,Confirm that the notification includes the estimated arrival time of the approaching bus.
+,Invalid Location Handling:
+,
+,Test Case: Verify that the application handles invalid or unsupported locations gracefully.
+,Steps:
+,Set the current location to a point outside the coverage area of the application.
+,Verify that the application informs the user that bus information is unavailable for the selected location.
+,Confirm that the application provides guidance on how to select a valid location within its coverage area.
+,Offline Mode:
+,
+,Test Case: Ensure the application retains previously fetched bus arrival information when switching to offline mode.
+,Steps:
+,Set the current location to a known bus stop with available bus services.
+,Fetch the estimated arrival time of the next bus while online.
+,Disable the internet connection (simulate offline mode).
+,Verify that the application continues to display the previously fetched arrival time without attempting to refresh data.
+,
+Route Display:,Valid Route Number:
+,
+Test Scenario: Confirm that the application correctly displays the route of a bus based on its route number.,Test Case: Ensure the application correctly displays the route of a bus when a valid route number is entered.
+Steps:,Steps:
+Enter the route number of a bus.,Enter a known and valid route number into the application.
+Verify that the application shows the entire route of the bus on the map.,Verify that the application successfully retrieves and displays the entire route of the bus on the map.
+Check if the displayed route matches the official route of the selected bus.,Confirm that the displayed route covers all the designated bus stops along the specified route.
+,Multiple Routes:
+,
+,Test Case: Validate that the application can display routes for multiple buses when different route numbers are entered.
+,Steps:
+,Enter the route numbers of multiple buses into the application.
+,Verify that the application accurately displays the routes of all the specified buses on the map.
+,Confirm that each displayed route corresponds to the respective bus's official route.
+,Invalid Route Number Handling:
+,
+,Test Case: Ensure the application handles invalid or non-existent route numbers gracefully.
+,Steps:
+,Enter an invalid or non-existent route number into the application.
+,Verify that the application provides a clear error message indicating that the entered route number is invalid.
+,Confirm that the application prompts the user to enter a valid route number or provides alternative options.
+,Partial Route Display:
+,
+,Test Case: Validate that the application displays only the relevant portion of the route when a specific bus stop is selected.
+,Steps:
+,Select a specific bus stop along a route.
+,Verify that the application displays the portion of the route from the starting point to the selected bus stop.
+,Confirm that the displayed route accurately represents the segment of the bus's route leading to the selected stop.
+,Route Alignment with Official Data:
+,
+,Test Case: Verify that the displayed route matches the official route of the selected bus.
+,Steps:
+,Cross-reference the route displayed by the application with official route maps or documentation provided by the transportation authority.
+,Confirm that the displayed route on the application aligns precisely with the official route information.
+,Ensure that there are no discrepancies or deviations between the application's route display and the official route data.
+,Dynamic Route Updates:
+,
+,Test Case: Ensure the application updates the displayed route in real-time to reflect any changes or detours.
+,Steps:
+,Monitor a bus's route in the application while it is in operation.
+,Verify that the application dynamically adjusts the displayed route to accommodate any deviations or detours due to road closures or construction.
+,Confirm that the updated route accurately reflects the temporary changes and continues to guide users effectively.
+,
+Bus Stoppings:,Valid Route Selection:
+,
+Test Scenario: Validate that the application lists all the bus stoppings along a particular route.,Test Case: Ensure the application correctly lists bus stoppings for a selected route.
+Steps:,Steps:
+Select a route to view its details.,Select a known and active route from the available options.
+Check if the application displays a list of all the bus stoppings in sequential order.,"Verify that the application displays the details of the selected route, including the list of bus stoppings."
+Ensure that the listed bus stoppings are accurate and correspond to the actual stops on the route.,Confirm that the list of bus stoppings corresponds to the official stops on the selected route.
+,Sequential Order of Bus Stoppings:
+,
+,Test Case: Validate that the application lists bus stoppings in sequential order along the selected route.
+,Steps:
+,Select a route and view its details.
+,Check the order in which the bus stoppings are listed by the application.
+,Verify that the bus stoppings are listed in the correct sequence as per the route's direction of travel.
+,Complete Bus Stoppings List:
+,
+,Test Case: Ensure the application displays a comprehensive list of all bus stoppings along the selected route.
+,Steps:
+,Select a route and view its details.
+,Compare the list of bus stoppings provided by the application with official route maps or documentation.
+,Confirm that the application includes all designated bus stoppings along the entire route without omission.
+,Accuracy of Bus Stoppings:
+,
+,Test Case: Verify that the listed bus stoppings accurately correspond to the actual stops on the route.
+,Steps:
+,Select a route and view its details.
+,Cross-reference the listed bus stoppings with known stops along the route or official route documentation.
+,Confirm that the application accurately identifies and lists each bus stopping without errors or discrepancies.
+,Dynamic Update of Bus Stoppings:
+,
+,Test Case: Ensure the application updates the list of bus stoppings in real-time to reflect any changes or additions.
+,Steps:
+,Monitor a route's details in the application while it is in operation.
+,Verify that the application dynamically updates the list of bus stoppings to reflect any newly added stops or changes in existing stops.
+,Confirm that the updated list remains accurate and synchronized with the latest route information.
+,Handling of Inactive Routes:
+,
+,Test Case: Validate that the application handles routes with no active bus services gracefully.
+,Steps:
+,Select a route that is temporarily inactive or out of service.
+,Verify that the application informs the user appropriately about the unavailability of bus stoppings for the selected route.
+,Confirm that the application guides the user to explore other available routes or services.
+,
+City Selection:,Valid City Selection:
+,
+Test Scenario: Ensure the application allows users to choose/change the city for which they want to track the buses.,Test Case: Ensure the application allows users to successfully switch to a different city.
+Steps:,Steps:
+Access the settings or preferences section of the application.,Access the settings or preferences section of the application.
+Select the option to change the city.,Select the option to change the city.
+Verify that the user can successfully switch to a different city and view bus information specific to that city.,Choose a different city from the available options.
+,Verify that the application updates the displayed bus information to reflect services specific to the newly selected city.
+,City-specific Bus Information:
+,
+,Test Case: Validate that bus information displayed after changing the city is specific to the selected city.
+,Steps:
+,Access the settings or preferences section of the application.
+,Select the option to change the city.
+,Choose a different city from the available options.
+,"Verify that the application displays bus routes, schedules, and other relevant information relevant to the newly selected city."
+,Confirm that the displayed information does not include data from the previously selected city.
+,Default City Selection:
+,
+,Test Case: Ensure the application handles the scenario when a user does not explicitly select a city.
+,Steps:
+,Open the application without explicitly selecting a city.
+,Verify that the application defaults to a predefined city or presents the user with options to select a city.
+,Confirm that the displayed bus information corresponds to the default or selected city.
+,Error Handling for Invalid City Selection:
+,
+,Test Case: Validate that the application handles invalid or unsupported city selections gracefully.
+,Steps:
+,Access the settings or preferences section of the application.
+,Select the option to change the city.
+,Attempt to choose a city that is not supported by the application or does not exist.
+,Verify that the application provides a clear error message indicating that the selected city is invalid.
+,Confirm that the application prompts the user to select a valid city or provides alternative options.
+,Persistence of City Selection:
+,
+,Test Case: Ensure that the application retains the user's selected city across sessions.
+,Steps:
+,Change the city in the application settings to a different city.
+,Close the application and reopen it.
+,Verify that the application maintains the previously selected city as the default.
+,Confirm that the displayed bus information continues to correspond to the user's selected city upon reopening the application.
+,Performance Testing for City Switching:
+,
+,Test Case: Validate the application's performance when switching between different cities.
+,Steps:
+,Access the settings or preferences section of the application.
+,Rapidly switch between different cities multiple times.
+,Monitor the application's response time and stability during the city switching process.
+,Verify that the application remains responsive and does not experience significant lag or crashes when changing cities repeatedly.
